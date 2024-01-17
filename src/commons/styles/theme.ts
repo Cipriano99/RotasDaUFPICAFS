@@ -1,0 +1,57 @@
+export const theme = {
+  borders: {
+    xs: '4px',
+    sm: '6px',
+    md: '8px',
+    lg: '16px',
+    full: '99999px',
+  },
+  gutter: '96px',
+  colors: {
+    primary: '#164CD7',
+    secondary: '#E5F0FF',
+    text: '#07195',
+    white: '#f6f6f6',
+  },
+
+  gradients: {
+    primary00: ['#001833 0%', 'transparent 30%'],
+    primary10: ['#001833 10%', 'transparent 30%'],
+    primary15: ['#001833 15%', 'transparent 35%'],
+    primary20: ['#001833 20%', 'transparent 40%'],
+    primaryDarkest: ['#001833 0%', 'transparent 70%'],
+    primaryLighter: ['#123d87 0%', 'transparent 70%'],
+    blue00: ['#1d63dd 0%', 'transparent 40%'],
+  },
+
+  sizes: {
+    tiny: '10px',
+    small: '12px',
+    smaller: '14px',
+    normal: '16px',
+    semiBig: '18px',
+    big: '20px',
+    bigger: '24px',
+    headlineSeven: '28px',
+    headlineSix: '32px',
+    headlineFive: '36px',
+    headlineFour: '48px',
+    headlineThree: '56px',
+    headlineTwo: '64px',
+    headlineOne: '72px',
+  },
+  weights: {
+    light: 100,
+    normal: 400,
+    medium: 500,
+    semiBold: 600,
+    bold: 700,
+  },
+  layers: {
+    toastify: 10001,
+    header: 10,
+    overlay: 20,
+    skeleton: 5,
+    bot: 2,
+  },
+} as const
