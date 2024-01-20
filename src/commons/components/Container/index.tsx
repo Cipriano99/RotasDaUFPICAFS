@@ -1,9 +1,8 @@
-import styled, { css } from 'styled-components'
+import { styled } from '@/commons/styles'
 
-export const Container = styled.div`
-  ${({ theme: { colors, borders, sizes } }) => css`
-    background-color: ${colors.primary};
-    border-radius: 0 0 ${borders.lg} ${borders.lg};
-    padding: ${sizes.normal};
-  `}
-`
+export const Container = styled('div', {
+  backgroundColor: '$primary',
+  borderRadius: '0 0 $lg $lg',
+  padding: '$lg',
+  boxShadow: '$base',
+})
