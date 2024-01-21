@@ -1,8 +1,7 @@
-import styled from 'styled-components'
+import { styled } from '@/commons/styles'
 
-export const HomeContainer = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1240px;
-  padding: 0 ${({ theme }) => theme.sizes.normal};
-`
+export const HomeContainer = styled('div', {
+  margin: '0 auto',
+  maxWidth: 960,
+  padding: '0 $sm',
+})
