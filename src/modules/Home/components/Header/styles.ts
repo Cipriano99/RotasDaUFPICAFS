@@ -2,14 +2,6 @@ import { Container as BaseContainer } from '@/commons/components'
 import { styled } from '@/commons/styles'
 
 export const Header = styled(BaseContainer, {
-  width: '100%',
-  color: '$white',
-
-  h1: {
-    fontSize: '$bigger',
-    fontWeight: '$semiBold',
-  },
-
   img: {
     width: 120,
     height: 'auto',
