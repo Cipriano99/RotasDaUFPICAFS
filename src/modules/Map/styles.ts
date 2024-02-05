@@ -11,5 +11,6 @@ export const Container = styled('div', {
     marginTop: 24,
     marginBottom: 24,
     borderRadius: '$lg',
+    boxShadow: '$base',
   },
 })
