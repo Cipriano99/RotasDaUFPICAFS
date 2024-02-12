@@ -21,11 +21,14 @@ export const useRenderRoutes = () => {
     poly.setPath(path)
   }, [])
 
-  const renderFullRoute = (map: google.maps.Map) => {
-    for (let index = 0; index < linesLocation.length; index++) {
-      renderLine(map, index)
-    }
-  }
+  const renderFullRoute = useCallback(
+    (map: google.maps.Map) => {
+      for (let index = 0; index < linesLocation.length; index++) {
+        renderLine(map, index)
+      }
+    },
+    [renderLine],
+  )
 
   return {
     renderLine,

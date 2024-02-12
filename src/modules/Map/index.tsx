@@ -4,6 +4,7 @@ import { Header } from './components/Header/index.'
 
 import * as S from './styles'
 import { useLoadMap } from './hooks/useLoadMap'
+import { DetailsLocationModal } from './components'
 
 export const MapsSection = () => {
   const mapRef = useRef<HTMLDivElement>(null)
@@ -14,6 +15,7 @@ export const MapsSection = () => {
     <S.Container>
       <Header />
       <div className="map" ref={mapRef} />
+      <DetailsLocationModal />
     </S.Container>
   )
 }

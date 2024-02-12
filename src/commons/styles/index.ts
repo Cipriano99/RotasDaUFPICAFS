@@ -14,8 +14,10 @@ export const {
     colors: {
       primary: '#164CD7',
       secondary: '#E5F0FF',
-      text: '#07195',
+      text: '#071952',
       white: '#f6f6f6',
+
+      gray500: '#020202',
     },
     radii: {
       xs: '4px',

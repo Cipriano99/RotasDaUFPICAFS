@@ -1,5 +1,6 @@
 export const stopMarkers = [
   {
+    id: '111',
     position: {
       lat: -6.777646,
       lng: -43.010144,
@@ -7,6 +8,7 @@ export const stopMarkers = [
     title: 'Localização A',
   },
   {
+    id: '222',
     position: {
       lat: -6.78419,
       lng: -43.015361,
@@ -14,6 +16,7 @@ export const stopMarkers = [
     title: 'Localização B',
   },
   {
+    id: '333',
     position: {
       lat: -6.782539,
       lng: -43.020399,
@@ -21,6 +24,7 @@ export const stopMarkers = [
     title: 'Localização C',
   },
   {
+    id: '444',
     position: {
       lat: -6.77769,
       lng: -43.031484,
@@ -28,6 +32,7 @@ export const stopMarkers = [
     title: 'Localização D',
   },
   {
+    id: '555',
     position: {
       lat: -6.786912,
       lng: -43.04179,
