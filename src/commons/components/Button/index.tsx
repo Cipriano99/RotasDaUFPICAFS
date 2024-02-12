@@ -5,9 +5,14 @@ export const Button = styled('button', {
   backgroundColor: '$primary',
   color: '$white',
   borderRadius: '$full',
-  fontSize: '$normal',
+  fontSize: '$small',
   fontWeight: '$semiBold',
   padding: '$sm',
   margin: '$sm',
   boxShadow: '$base',
+
+  '&:hover': {
+    cursor: 'pointer',
+    filter: 'brightness(0.9)',
+  },
 })
