@@ -6,16 +6,16 @@
 
 const onibus1 = {
   titulosRotas07he14h: [
-    { titulo: 'Posto Fiscal Pontões' },
-    { titulo: 'Posto Fiscal - Barão de Grajaú' },
-    { titulo: 'Posto Tropical' },
-    { titulo: 'Hospital' },
-    { titulo: 'Posto R.Sá' },
-    { titulo: 'Sorvetes Quick' },
-    { titulo: 'Agespisa' },
-    { titulo: 'Fartote Freitas' },
-    { titulo: 'Procuradoria Federal' },
-    { titulo: 'Universidade Federal do Piauí' },
+    { title: 'Posto Fiscal Pontões' },
+    { title: 'Posto Fiscal - Barão de Grajaú' },
+    { title: 'Posto Tropical' },
+    { title: 'Hospital' },
+    { title: 'Posto R.Sá' },
+    { title: 'Sorvetes Quick' },
+    { title: 'Agespisa' },
+    { title: 'Fartote Freitas' },
+    { title: 'Procuradoria Federal' },
+    { title: 'Universidade Federal do Piauí' },
   ],
   coordenadasRotas07he14h: [
     { lat: -6.763243, lng: -43.010186 },
@@ -139,6 +139,69 @@ const onibus1 = {
   ],
 }
 
+const rota1 = [
+  {
+    title: 'Posto Fiscal Pontões',
+    position: { lat: -6.763243, lng: -43.010186 },
+    am: ['06:57h'],
+    pm: ['13:27h'],
+  },
+  {
+    title: 'Posto Fiscal - Barão de Grajaú',
+    position: { lat: -6.755066, lng: -43.01447 },
+    am: ['06:59h'],
+    pm: ['13:29h'],
+  },
+  {
+    title: 'Posto Tropical',
+    position: { lat: -6.755124, lng: -43.019727 },
+    am: ['07:02h'],
+    pm: ['13:31h'],
+  },
+  {
+    title: 'Hospital',
+    position: { lat: -6.754217, lng: -43.026155 },
+    am: ['07:03h'],
+    pm: ['13:33h'],
+  },
+  {
+    title: 'Posto R.Sá',
+    position: { lat: -6.777535, lng: -43.010081 },
+    am: ['07:10h'],
+    pm: ['13:40h'],
+  },
+  {
+    title: 'Sorvetes Quick',
+    position: { lat: -6.78413, lng: -43.015314 },
+    am: ['07:12h'],
+    pm: ['13:42h'],
+  },
+  {
+    title: 'Agespisa',
+    position: { lat: -6.782775, lng: -43.019943 },
+    am: ['07:13h'],
+    pm: ['13:44h'],
+  },
+  {
+    title: 'Fartote Freitas',
+    position: { lat: -6.781115, lng: -43.023631 },
+    am: ['07:15h'],
+    pm: ['13:45h'],
+  },
+  {
+    title: 'Procuradoria Federal',
+    position: { lat: -6.777721, lng: -43.031453 },
+    am: ['07:17h'],
+    pm: ['13:46h'],
+  },
+  {
+    title: 'Universidade Federal do Piauí',
+    position: { lat: -6.787119, lng: -43.041498 },
+    am: ['07:22h'],
+    pm: ['13:51h'],
+  },
+]
+
 /*
 
   ÔNIBUS 2
@@ -147,18 +210,18 @@ const onibus1 = {
 
 const onibus2 = {
   titulosRotas07he14h: [
-    { titulo: 'Garagem da prefeitura' },
-    { titulo: 'Posto Zito' },
-    { titulo: 'Diocese' },
-    { titulo: 'Paraíba' },
-    { titulo: 'Residencial Cantumbi' },
-    { titulo: 'Hotel Rio Parnaíba' },
-    { titulo: 'Posto R.Sá' },
-    { titulo: 'Sorvetes Quick' },
-    { titulo: 'Agespisa' },
-    { titulo: 'Fartote Freitas' },
-    { titulo: 'Procuradoria Federal' },
-    { titulo: 'Universidade Federal do Piauí' },
+    { title: 'Garagem da prefeitura' },
+    { title: 'Posto Zito' },
+    { title: 'Diocese' },
+    { title: 'Paraíba' },
+    { title: 'Residencial Catumbi' },
+    { title: 'Hotel Rio Parnaíba' },
+    { title: 'Posto R.Sá' },
+    { title: 'Sorvetes Quick' },
+    { title: 'Agespisa' },
+    { title: 'Fartote Freitas' },
+    { title: 'Procuradoria Federal' },
+    { title: 'Universidade Federal do Piauí' },
   ],
   coordenadasRotas07he14h: [
     { lat: -6.769857, lng: -43.034901 },
@@ -245,21 +308,21 @@ const onibus2 = {
     { lat: -6.787119, lng: -43.041498 }, // UFPI - Fim da rota
   ],
   titulosRota17h: [
-    { titulo: 'Universidade Federal do Piauí' },
-    { titulo: 'Terreno baldio' },
-    { titulo: 'Garagem da prefeitura' },
-    { titulo: 'Posto Zito' },
-    { titulo: 'Diocese' },
-    { titulo: 'Paraíba' },
-    { titulo: 'Residencial Cantumbi' },
-    { titulo: 'Hotel Rio Parnaíba' },
-    { titulo: 'Terminal Rodoviário' },
-    { titulo: 'Posto R.Sá' },
-    { titulo: 'Sorvetes Quick' },
-    { titulo: 'Agespisa' },
-    { titulo: 'Fartote Freitas' },
-    { titulo: 'Procuradoria Federal' },
-    { titulo: 'Universidade Federal do Piauí' },
+    { title: 'Universidade Federal do Piauí' },
+    { title: 'Terreno baldio' },
+    { title: 'Garagem da prefeitura' },
+    { title: 'Posto Zito' },
+    { title: 'Diocese' },
+    { title: 'Paraíba' },
+    { title: 'Residencial Catumbi' },
+    { title: 'Hotel Rio Parnaíba' },
+    { title: 'Terminal Rodoviário' },
+    { title: 'Posto R.Sá' },
+    { title: 'Sorvetes Quick' },
+    { title: 'Agespisa' },
+    { title: 'Fartote Freitas' },
+    { title: 'Procuradoria Federal' },
+    { title: 'Universidade Federal do Piauí' },
   ],
   coordenadasRota17h: [
     { lat: -6.787119, lng: -43.041498 },
@@ -378,6 +441,81 @@ const onibus2 = {
   ],
 }
 
+const rota2 = [
+  {
+    title: 'Garagem da prefeitura',
+    position: { lat: -6.769857, lng: -43.034901 },
+    am: ['06:56h'],
+    pm: ['13:26h', '17:11h'],
+  },
+  {
+    title: 'Posto Zito',
+    position: { lat: -6.769419, lng: -43.028089 },
+    am: ['06:58h'],
+    pm: ['13:28h', '17:13h'],
+  },
+  {
+    title: 'Diocese',
+    position: { lat: -6.769188, lng: -43.024902 },
+    am: ['07:00h'],
+    pm: ['13:30h', '17:16h'],
+  },
+  {
+    title: 'Paraíba',
+    position: { lat: -6.768719, lng: -43.019069 },
+    am: ['07:02h'],
+    pm: ['13:32h', '17:19h'],
+  },
+  {
+    title: 'Residencial Catumbi',
+    position: { lat: -6.770855, lng: -43.012945 },
+    am: ['07:04h'],
+    pm: ['13:34h', '17:23h'],
+  },
+  {
+    title: 'Hotel Rio Parnaíba',
+    position: { lat: -6.774037, lng: -43.009452 },
+    am: ['07:05h'],
+    pm: ['13:35h', '17:26h'],
+  },
+  {
+    title: 'Posto R.Sá',
+    position: { lat: -6.779149, lng: -43.01134 },
+    am: ['07:07h'],
+    pm: ['13:37h', '17:35h'],
+  },
+  {
+    title: 'Sorvetes Quick',
+    position: { lat: -6.78413, lng: -43.015314 },
+    am: ['07:09h'],
+    pm: ['13:39h', '17:37h'],
+  },
+  {
+    title: 'Agespisa',
+    position: { lat: -6.782775, lng: -43.019943 },
+    am: ['07:11h'],
+    pm: ['13:41h', '17:39h'],
+  },
+  {
+    title: 'Fartote Freitas',
+    position: { lat: -6.781115, lng: -43.023631 },
+    am: ['07:13h'],
+    pm: ['13:43h', '17:41h'],
+  },
+  {
+    title: 'Procuradoria Federal',
+    position: { lat: -6.777721, lng: -43.031453 },
+    am: ['07:15h'],
+    pm: ['13:45h', '17:43h'],
+  },
+  {
+    title: 'Universidade Federal do Piauí',
+    position: { lat: -6.787119, lng: -43.041498 },
+    am: ['07:20h'],
+    pm: ['13:50h', '17:05h', '17:49h'],
+  },
+]
+
 /*
 
   ÔNIBUS 3
@@ -386,18 +524,18 @@ const onibus2 = {
 
 const onibus3 = {
   titulosRotas07he14h: [
-    { titulo: 'Miguel da pias' },
-    { titulo: "Educandário Santa Joana D'Arc" },
-    { titulo: 'Paraíba' },
-    { titulo: 'Residencial Cantumbi' },
-    { titulo: 'Hotel Rio Parnaíba' },
-    { titulo: 'Terminal Rodoviário' },
-    { titulo: 'Posto R.Sá' },
-    { titulo: 'Sorvetes Quick' },
-    { titulo: 'Agespisa' },
-    { titulo: 'Fartote Freitas' },
-    { titulo: 'Procuradoria Federal' },
-    { titulo: 'Universidade Federal do Piauí' },
+    { title: 'Miguel da pias' },
+    { title: "Educandário Santa Joana D'Arc" },
+    { title: 'Paraíba' },
+    { title: 'Residencial Catumbi' },
+    { title: 'Hotel Rio Parnaíba' },
+    { title: 'Terminal Rodoviário' },
+    { title: 'Posto R.Sá' },
+    { title: 'Sorvetes Quick' },
+    { title: 'Agespisa' },
+    { title: 'Fartote Freitas' },
+    { title: 'Procuradoria Federal' },
+    { title: 'Universidade Federal do Piauí' },
   ],
   coordenadasRotas07he14h: [
     { lat: -6.776607, lng: -43.023473 },
@@ -510,21 +648,21 @@ const onibus3 = {
     { lat: -6.787119, lng: -43.041498 }, // UFPI - Fim da rota
   ],
   titulosRota17h: [
-    { titulo: 'Universidade Federal do Piauí' },
-    { titulo: 'Procuradoria Federal' },
-    { titulo: 'Agespisa' },
-    { titulo: 'TV Alvorada' },
-    { titulo: 'Posto R.Sá' },
-    { titulo: 'Posto Fiscal Pontões' },
-    { titulo: 'Posto Fiscal - Barão de Grajaú' },
-    { titulo: 'Posto Tropical' },
-    { titulo: 'Hospital' },
-    { titulo: 'Posto R.Sá' },
-    { titulo: 'Sorvetes Quick' },
-    { titulo: 'Agespisa' },
-    { titulo: 'Fartote Freitas' },
-    { titulo: 'Procuradoria Federal' },
-    { titulo: 'Universidade Federal do Piauí' },
+    { title: 'Universidade Federal do Piauí' },
+    { title: 'Procuradoria Federal' },
+    { title: 'Agespisa' },
+    { title: 'TV Alvorada' },
+    { title: 'Posto R.Sá' },
+    { title: 'Posto Fiscal Pontões' },
+    { title: 'Posto Fiscal - Barão de Grajaú' },
+    { title: 'Posto Tropical' },
+    { title: 'Hospital' },
+    { title: 'Posto R.Sá' },
+    { title: 'Sorvetes Quick' },
+    { title: 'Agespisa' },
+    { title: 'Fartote Freitas' },
+    { title: 'Procuradoria Federal' },
+    { title: 'Universidade Federal do Piauí' },
   ],
   coordenadasRota17h: [
     { lat: -6.787119, lng: -43.041498 },
@@ -645,3 +783,141 @@ const onibus3 = {
     { lat: -6.787119, lng: -43.041498 }, // UFPI - Fim da rota
   ],
 }
+
+const rota3 = [
+  {
+    title: 'Miguel da pias',
+    position: { lat: -6.776607, lng: -43.023473 },
+    am: ['06:56h'],
+    pm: ['13:16h'],
+  },
+  {
+    title: "Educandário Santa Joana D'Arc",
+    position: { lat: -6.772138, lng: -43.023813 },
+    am: ['06:58h'],
+    pm: ['13:18h'],
+  },
+  {
+    title: 'Paraíba',
+    position: { lat: -6.768719, lng: -43.019069 },
+    am: ['07:00h'],
+    pm: ['13:20h'],
+  },
+  {
+    title: 'Residencial Catumbi',
+    position: { lat: -6.770855, lng: -43.012945 },
+    am: ['07:03h'],
+    pm: ['13:22h'],
+  },
+  {
+    title: 'Hotel Rio Parnaíba',
+    position: { lat: -6.774037, lng: -43.009452 },
+    am: ['07:05h'],
+    pm: ['13:24h'],
+  },
+  {
+    title: 'Terminal Rodoviário',
+    position: { lat: -6.78733, lng: -42.992241 },
+    am: ['07:09h'],
+    pm: ['13:28h'],
+  },
+  {
+    title: 'Posto R.Sá',
+    position: { lat: -6.779149, lng: -43.01134 },
+    am: ['07:14h'],
+    pm: ['13:32h'],
+  },
+  {
+    title: 'Sorvetes Quick',
+    position: { lat: -6.78413, lng: -43.015314 },
+    am: ['07:16h'],
+    pm: ['13:34h'],
+  },
+  {
+    title: 'Agespisa',
+    position: { lat: -6.782775, lng: -43.019943 },
+    am: ['07:18h'],
+    pm: ['13:36h'],
+  },
+  {
+    title: 'Fartote Freitas',
+    position: { lat: -6.781115, lng: -43.023631 },
+    am: ['07:20h'],
+    pm: ['13:38h'],
+  },
+  {
+    title: 'Procuradoria Federal',
+    position: { lat: -6.777721, lng: -43.031453 },
+    am: ['07:22h'],
+    pm: ['13:40h'],
+  },
+  {
+    title: 'Universidade Federal do Piauí',
+    position: { lat: -6.787119, lng: -43.041498 },
+    am: ['07:26h'],
+    pm: ['13:45h'],
+  },
+]
+
+const rota = []
+
+// Object.entries(onibus3).forEach(([key, data]) => {
+//   if (key === 'titulosRotas07he14h') {
+//     data.forEach((item) => {
+//       rota.push(item)
+//     })
+//   }
+
+//   if (key === 'coordenadasRotas07he14h') {
+//     data.forEach((item, index) => {
+//       rota[index] = { ...rota[index], position: { ...item } }
+
+//       rota[index].am = []
+//       rota[index].pm = []
+//     })
+//   }
+
+//   if (key === 'horario07') {
+//     data.forEach((item, index) => {
+//       rota[index].am.push(item.hora)
+//     })
+//   }
+//   if (key === 'horario14') {
+//     data.forEach((item, index) => {
+//       rota[index].pm.push(item.hora)
+//     })
+//   }
+// })
+
+// Object.entries(onibus3).forEach(([key, data]) => {
+//   if (key === 'titulosRota17h') {
+//     data.forEach((item, index) => {
+//       const indexPoint = rota2.findIndex((find) => find.title === item.title)
+//       console.log('🚀 ~ data.forEach ~ indexPoint:', indexPoint)
+
+//       const times = [
+//         { hora: '17:05h' },
+//         { hora: '17:08h' },
+//         { hora: '17:09h' },
+//         { hora: '17:11h' },
+//         { hora: '17:14h' },
+//         { hora: '17:16h' },
+//         { hora: '17:21h' },
+//         { hora: '17:23h' },
+//         { hora: '17:25h' },
+//         { hora: '17:31h' },
+//         { hora: '17:33h' },
+//         { hora: '17:35h' },
+//         { hora: '17:37h' },
+//         { hora: '17:39h' },
+//         { hora: '17:44h' },
+//       ]
+
+//       if (indexPoint >= 0) {
+//         rota3[indexPoint].pm.push(times[index].hora)
+//       } else {
+//         rota.push(item)
+//       }
+//     })
+//   }
+// })

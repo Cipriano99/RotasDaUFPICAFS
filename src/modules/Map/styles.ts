@@ -1,3 +1,4 @@
+import { Button } from '@/commons/components'
 import { styled } from '@/commons/styles'
 
 export const Container = styled('div', {
@@ -13,4 +14,11 @@ export const Container = styled('div', {
     borderRadius: '$lg',
     boxShadow: '$base',
   },
+})
+
+export const BackButton = styled(Button, {
+  display: 'flex',
+  alignItems: 'center',
+  gap: 4,
+  margin: '0 auto',
 })
