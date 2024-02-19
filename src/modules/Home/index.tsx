@@ -1,13 +1,13 @@
-import Image from 'next/image'
-
-import logoGoogle from '@/commons/assets/images/google-logo.svg'
-
 import { Button } from '@/commons/components'
 import { Header } from './components/Header'
 
 import * as S from './styles'
+import { FaArrowRight } from 'react-icons/fa'
+import { useRouter } from 'next/router'
 
 export const HomeSection = () => {
+  const router = useRouter()
+
   return (
     <S.Container>
       <Header />
@@ -17,14 +17,13 @@ export const HomeSection = () => {
         ônibus da UFPI, bem como suas respectivas localizações em tempo real.
       </p>
 
-      <Button>
-        <Image
-          src={logoGoogle}
-          alt="Logo rotas da UFPI"
-          width={24}
-          height={24}
-        />
-        Conecte-se com o Google
+      <Button
+        onClick={() => {
+          router.push('/mapa')
+        }}
+      >
+        Ver rotas
+        <FaArrowRight size={18} />
       </Button>
     </S.Container>
   )

@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import { FaArrowLeft } from 'react-icons/fa6'
 
 import { useLoadMap } from './hooks/useLoadMap'
 import { Header, DetailsLocationModal } from './components'
@@ -15,9 +14,6 @@ export const MapsSection = () => {
     <S.Container>
       <Header />
       <div className="map" ref={mapRef} />
-      <S.BackButton>
-        <FaArrowLeft /> Voltar
-      </S.BackButton>
       <DetailsLocationModal />
     </S.Container>
   )

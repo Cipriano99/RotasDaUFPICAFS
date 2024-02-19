@@ -7,7 +7,7 @@ export const Button = styled('button', {
   borderRadius: '$full',
   fontSize: '$small',
   fontWeight: '$semiBold',
-  padding: '$sm',
+  padding: '$sm $md',
   margin: '$sm',
   boxShadow: '$base',
 
