@@ -14,8 +14,8 @@ export const DetailsLocationModal: FC = () => {
 
   return (
     <Modal
-      isOpen={!!markerModalOpen}
-      closeBtn={{ onClick: () => handleOpenMarkerModal('') }}
+      isOpen={markerModalOpen !== 0}
+      closeBtn={{ onClick: () => handleOpenMarkerModal(0) }}
     >
       <S.Container>
         <S.Header>
@@ -32,18 +32,22 @@ export const DetailsLocationModal: FC = () => {
           <S.StopTimes>
             <table>
               <thead>
-                <th>Ônibus</th>
+                <th>Período</th>
                 <th>Hora prevista</th>
               </thead>
               <tbody>
-                <tr>
-                  <td>XXX-0000</td>
-                  <td>07:11</td>
-                </tr>
-                <tr>
-                  <td>XXX-0001</td>
-                  <td>07:17</td>
-                </tr>
+                {markerData?.am.map((item) => (
+                  <tr key={item}>
+                    <td>Manhã</td>
+                    <td>{item}</td>
+                  </tr>
+                ))}
+                {markerData?.pm.map((item) => (
+                  <tr key={item}>
+                    <td>Tarde</td>
+                    <td>{item}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </S.StopTimes>

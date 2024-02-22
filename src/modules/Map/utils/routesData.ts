@@ -145,60 +145,70 @@ const rota1 = [
     position: { lat: -6.763243, lng: -43.010186 },
     am: ['06:57h'],
     pm: ['13:27h'],
+    id: 1708385291135,
   },
   {
     title: 'Posto Fiscal - Barão de Grajaú',
     position: { lat: -6.755066, lng: -43.01447 },
     am: ['06:59h'],
     pm: ['13:29h'],
+    id: 1708385291135,
   },
   {
     title: 'Posto Tropical',
     position: { lat: -6.755124, lng: -43.019727 },
     am: ['07:02h'],
     pm: ['13:31h'],
+    id: 1708385291135,
   },
   {
     title: 'Hospital',
     position: { lat: -6.754217, lng: -43.026155 },
     am: ['07:03h'],
     pm: ['13:33h'],
+    id: 1708385291135,
   },
   {
     title: 'Posto R.Sá',
     position: { lat: -6.777535, lng: -43.010081 },
     am: ['07:10h'],
     pm: ['13:40h'],
+    id: 1708385291136,
   },
   {
     title: 'Sorvetes Quick',
     position: { lat: -6.78413, lng: -43.015314 },
     am: ['07:12h'],
     pm: ['13:42h'],
+    id: 1708385291137,
   },
   {
     title: 'Agespisa',
     position: { lat: -6.782775, lng: -43.019943 },
     am: ['07:13h'],
     pm: ['13:44h'],
+    id: 1708385291138,
   },
   {
     title: 'Fartote Freitas',
     position: { lat: -6.781115, lng: -43.023631 },
     am: ['07:15h'],
     pm: ['13:45h'],
+    id: 1708385291139,
   },
   {
     title: 'Procuradoria Federal',
     position: { lat: -6.777721, lng: -43.031453 },
     am: ['07:17h'],
     pm: ['13:46h'],
+    id: 1708385291140,
   },
   {
     title: 'Universidade Federal do Piauí',
     position: { lat: -6.787119, lng: -43.041498 },
     am: ['07:22h'],
     pm: ['13:51h'],
+    id: 1708385291141,
   },
 ]
 
@@ -921,3 +931,140 @@ const rota = []
 //     })
 //   }
 // })
+
+const stopMarkers = [
+  {
+    title: 'Posto Fiscal Pontões',
+    position: { lat: -6.763243, lng: -43.010186 },
+    am: ['06:57h'],
+    pm: ['13:27h'],
+  },
+  {
+    title: 'Posto Fiscal - Barão de Grajaú',
+    position: { lat: -6.755066, lng: -43.01447 },
+    am: ['06:59h'],
+    pm: ['13:29h'],
+  },
+  {
+    title: 'Posto Tropical',
+    position: { lat: -6.755124, lng: -43.019727 },
+    am: ['07:02h'],
+    pm: ['13:31h'],
+  },
+  {
+    title: 'Hospital',
+    position: { lat: -6.754217, lng: -43.026155 },
+    am: ['07:03h'],
+    pm: ['13:33h'],
+  },
+  {
+    title: 'Garagem da prefeitura',
+    position: { lat: -6.769857, lng: -43.034901 },
+    am: ['06:56h'],
+    pm: ['13:26h', '17:11h'],
+  },
+  {
+    title: 'Posto Zito',
+    position: { lat: -6.769419, lng: -43.028089 },
+    am: ['06:58h'],
+    pm: ['13:28h', '17:13h'],
+  },
+  {
+    title: 'Diocese',
+    position: { lat: -6.769188, lng: -43.024902 },
+    am: ['07:00h'],
+    pm: ['13:30h', '17:16h'],
+  },
+  {
+    title: 'Paraíba',
+    position: { lat: -6.768719, lng: -43.019069 },
+    am: ['07:02h', '07:00h'],
+    pm: ['13:32h', '17:19h', '13:20h'],
+  },
+  {
+    title: 'Residencial Catumbi',
+    position: { lat: -6.770855, lng: -43.012945 },
+    am: ['07:04h', '07:03h'],
+    pm: ['13:34h', '17:23h', '13:22h'],
+  },
+  {
+    title: 'Hotel Rio Parnaíba',
+    position: { lat: -6.774037, lng: -43.009452 },
+    am: ['07:05h', '07:05h'],
+    pm: ['13:35h', '17:26h', '13:24h'],
+  },
+  {
+    title: 'Terminal Rodoviário',
+    position: { lat: -6.78733, lng: -42.992241 },
+    am: ['07:09h'],
+    pm: ['13:28h'],
+  },
+  {
+    title: 'Posto R.Sá',
+    position: { lat: -6.779149, lng: -43.01134 },
+    am: ['07:07h', '07:14h'],
+    pm: ['13:37h', '17:35h', '13:32h'],
+  },
+  {
+    title: 'Posto R.Sá',
+    position: { lat: -6.777535, lng: -43.010081 },
+    am: ['07:10h'],
+    pm: ['13:40h'],
+  },
+  {
+    title: 'Sorvetes Quick',
+    position: { lat: -6.78413, lng: -43.015314 },
+    am: ['07:12h', '07:09h', '07:16h'],
+    pm: ['13:42h', '13:39h', '17:37h', '13:34h'],
+  },
+  {
+    title: 'Agespisa',
+    position: { lat: -6.782775, lng: -43.019943 },
+    am: ['07:13h', '07:11h', '07:18h'],
+    pm: ['13:44h', '13:41h', '17:39h', '13:36h'],
+  },
+  {
+    title: 'Fartote Freitas',
+    position: { lat: -6.781115, lng: -43.023631 },
+    am: ['07:15h', '07:13h', '07:20h'],
+    pm: ['13:45h', '13:43h', '17:41h', '13:38h'],
+  },
+  {
+    title: 'Procuradoria Federal',
+    position: { lat: -6.777721, lng: -43.031453 },
+    am: ['07:17h', '07:15h', '07:22h'],
+    pm: ['13:46h', '13:45h', '17:43h', '13:40h'],
+  },
+  {
+    title: 'Universidade Federal do Piauí',
+    position: { lat: -6.787119, lng: -43.041498 },
+    am: ['07:22h', '07:20h', '07:26h'],
+    pm: ['13:51h', '13:50h', '17:05h', '17:49h', '13:45h'],
+  },
+]
+
+// console.log(
+//   stopMarkers.map((i) => {
+//     const match = rota3.findIndex(
+//       (j) =>
+//         j.position.lat === i.position.lat && j.position.lng === i.position.lng,
+//     )
+
+//     if (match >= 0) {
+//       let aux = i
+//       aux = {
+//         ...aux,
+//         am: [...aux.am, ...rota3[match].am],
+//         pm: [...aux.pm, ...rota3[match].pm],
+//       }
+
+//       return aux
+//     }
+
+//     return i
+//   }),
+// )
+
+stopMarkers.forEach((i, index) => {
+  console.log({ ...i, id: 3957 + index })
+})

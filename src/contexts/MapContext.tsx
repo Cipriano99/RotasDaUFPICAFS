@@ -1,5 +1,4 @@
 import {
-  FC,
   ReactNode,
   createContext,
   useCallback,
@@ -8,15 +7,15 @@ import {
 } from 'react'
 
 interface MapContextProps {
-  markerModalOpen: string
-  handleOpenMarkerModal: (id: string) => void
+  markerModalOpen: number
+  handleOpenMarkerModal: (id: number) => void
 }
 
 const MapContext = createContext({} as MapContextProps)
 
 export const MapContextProvider = ({ children }: { children: ReactNode }) => {
-  const [markerModalOpen, setMarkerModalOpen] = useState('')
-  const handleOpenMarkerModal = useCallback((id: string) => {
+  const [markerModalOpen, setMarkerModalOpen] = useState<number>(0)
+  const handleOpenMarkerModal = useCallback((id: number) => {
     setMarkerModalOpen(id)
   }, [])
 

@@ -20,7 +20,7 @@ export const useLoadMap = ({ mapRef }: ILoadMap) => {
     })
 
     const { Map } = await loader.importLibrary('maps')
-    const { Marker } = await loader.importLibrary('marker')
+    const { AdvancedMarkerElement } = await loader.importLibrary('marker')
 
     const mapOptions: google.maps.MapOptions = {
       center: {
@@ -36,17 +36,22 @@ export const useLoadMap = ({ mapRef }: ILoadMap) => {
 
     const map = new Map(mapRef.current as HTMLDivElement, mapOptions)
 
+    function buildContent() {
+      const content = document.createElement('div')
+
+      content.innerHTML = '🚏'
+
+      content.style.fontSize = '40px'
+
+      return content
+    }
+
     stopMarkers.forEach(({ position, title, id }) => {
-      const marker = new Marker({
+      const marker = new AdvancedMarkerElement({
         position,
         map,
         title,
-        icon: '#',
-        label: {
-          text: '🚏',
-          fontSize: '32px',
-          className: 'stopMarker',
-        },
+        content: buildContent(),
       })
 
       google.maps.event.addListener(marker, 'click', () => {
